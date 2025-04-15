@@ -1,41 +1,21 @@
-# Website
+# Aexum User Manual
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+![Aexum](static/img/aexum-logo-heading-light.svg#gh-light-mode-only)![Aexum](static/img/aexum-logo-heading-dark.svg#gh-dark-mode-only)
 
-### Installation
+This is the repository for the Aexum manual, using docusarus.
 
-```
-$ yarn
-```
+## Building and running
 
-### Local Development
+*Build status: ![Build Status](https://github.com/Nodefusion/Aexum.UserManual/actions/workflows/deploy.yml/badge.svg)*
 
-```
-$ yarn start
-```
+- Dev
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-### Build
-
-```
-$ yarn build
+```bash
+    npm start
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+- Build
 
-### Deployment
-
-Using SSH:
-
+```bash
+    npm build
 ```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
