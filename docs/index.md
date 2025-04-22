@@ -3,18 +3,16 @@ slug: /
 sidebar_position: 1
 ---
 
-# Introduction
-
-Aexum - User Manual
+# Aexum User Manual
 
 ## Getting Sterted
 
-* [www.aexum.com](https://www.aexum.com)
-* [app.aexum.com](https://app.aexum.com)
+* [https://www.aexum.com](https://www.aexum.com)
+* [https://app.aexum.com](https://app.aexum.com)
 
 ### Nodefusion Account Login
 
-For use of Aexum, requirement is to have valid and active Nodefusion Account on [https://login.nodefusion.com](https://login.nodefusion.com)
+For use of Aexum, requirement is to have valid and active Nodefusion Account on [https://login.nodefusion.com](https://login.nodefusion.com), or check [Nodefusion Account User Manual](https://account-manual.nodefusion.com )
 
 ### Preview version
 

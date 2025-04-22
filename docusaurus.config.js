@@ -10,7 +10,7 @@ import { themes as prismThemes } from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Nodefusion Aexum User Manual',
+  title: 'Aexum User Manual',
   tagline: 'Aexum.UserManual',
   favicon: 'img/favicon.ico',
 
@@ -110,16 +110,24 @@ const config = {
             title: 'Community',
             items: [
               {
+                label: 'Aexum',
+                href: 'https://www.aexum.com/',
+              },
+              {
                 label: 'Nodefusion',
-                href: 'https://www.nodefusion.com/en-us/',
+                href: 'https://www.nodefusion.com/',
+              },              
+              {
+                label: 'Facebook',
+                href: 'https://www.facebook.com/Nodefusion',
+              },
+              {
+                label: 'LinkedIn',
+                href: 'https://www.linkedin.com/company/Nodefusion',
               },
               {
                 label: 'X',
                 href: 'https://x.com/Nodefusion',
-              },
-              {
-                label: 'LinkedIn',
-                href: 'https://www.linkedin.com/company/nodefusion',
               }
             ],
           },
@@ -127,13 +135,18 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'GitHub',
-                href: 'https://github.com/nodefusion',
+                label: 'Aexum',
+                href: 'https://app.aexum.com/'
               },
+              {
+                label: 'GitHub',
+                href: 'https://github.com/Nodefusion'
+              },
+
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Nodefusion, Inc.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Nodefusion`,
       },
       prism: {
         theme: prismThemes.github,
