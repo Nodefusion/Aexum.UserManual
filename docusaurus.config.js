@@ -100,6 +100,9 @@ const config = {
         indexName: 'app-manual-aexum',
         insights: true,
       },
+      colorMode: {
+        respectPrefersColorScheme: true,
+      },
       footer: {
         style: 'dark',
         links: [
