@@ -5,7 +5,7 @@ sidebar_position: 1
 
 # Aexum User Manual
 
-## Getting Sterted
+## Getting Started
 
 * [https://www.aexum.com](https://www.aexum.com)
 * [https://app.aexum.com](https://app.aexum.com)

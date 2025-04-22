@@ -80,7 +80,7 @@ const config = {
       // Replace with your project's social card
       image: 'img/aexum-logo.png',
       navbar: {
-        title: 'Introduction',
+        title: 'Aexum User Manual',
         logo: {
           alt: 'Aexum',
           src: 'img/aexum-logo-heading-light.svg',
