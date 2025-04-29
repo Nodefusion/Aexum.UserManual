@@ -38,6 +38,69 @@ const config = {
     locales: ['en'],
   },
 
+  plugins: [
+    [
+      'pwa',
+      {
+        debug: true,
+        offlineModeActivationStrategies: [
+          'appInstalled',
+          'saveData',
+          'queryString',
+          'standalone'
+        ],
+        pwaHead: [
+          {
+            tagName: 'link',
+            rel: 'icon',
+            href: '/img/aexum-logo-loading.svg',
+          },
+          {
+            tagName: 'link',
+            rel: 'manifest',
+            href: '/manifest.json',
+          },
+          {
+            tagName: 'meta',
+            name: 'theme-color',
+            content: '#d37352',
+          },
+          {
+            tagName: 'meta',
+            name: 'apple-mobile-web-app-capable',
+            content: 'yes',
+          },
+          {
+            tagName: 'meta',
+            name: 'apple-mobile-web-app-status-bar-style',
+            content: '#d37352',
+          },
+          {
+            tagName: 'link',
+            rel: 'apple-touch-icon',
+            href: '/img/aexum-logo-loading.svg',
+          },
+          {
+            tagName: 'link',
+            rel: 'mask-icon',
+            href: '/img/aexum-logo-loading.svg',
+            color: '#d37352',
+          },
+          {
+            tagName: 'meta',
+            name: 'msapplication-TileImage',
+            content: '/img/aexum-logo-loading.svg',
+          },
+          {
+            tagName: 'meta',
+            name: 'msapplication-TileColor',
+            content: '#d37352',
+          },
+        ],
+      },
+    ],
+  ],
+
   presets: [
     [
       'classic',
@@ -56,6 +119,10 @@ const config = {
         },
         googleTagManager: {
           containerId: 'GTM-5QZP95RS'
+        },
+        sitemap: {
+          changefreq: 'weekly',
+          lastmod: 'datetime',
         },
         // blog: {
         //   showReadingTime: true,
@@ -122,7 +189,7 @@ const config = {
               {
                 label: 'Nodefusion',
                 href: 'https://www.nodefusion.com/',
-              },              
+              },
               {
                 label: 'Facebook',
                 href: 'https://www.facebook.com/Nodefusion',
