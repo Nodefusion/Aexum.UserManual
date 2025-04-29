@@ -51,6 +51,12 @@ const config = {
           editUrl:
             'https://github.com/Nodefusion/Aexum.UserManual/tree/main/',
         },
+        gtag: {
+          trackingID: 'G-7GL4J3XNGG'
+        },
+        googleTagManager: {
+          containerId: 'GTM-5QZP95RS'
+        },
         // blog: {
         //   showReadingTime: true,
         //   feedOptions: {
