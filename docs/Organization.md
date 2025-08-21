@@ -1,4 +1,4 @@
-# Organization 
+# Organization
 
 Manage organizations with delete, create, update actions.
 

@@ -1,3 +1,3 @@
 # Organization Permissions
 
-Page with Organizaton Permissions.
+Page with Organization Permissions.
