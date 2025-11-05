@@ -1,6 +1,29 @@
 # Asset Catalogs
 
-Manage asset catalogs with create, delete and update actions.
+Asset catalog represents particular Asset in technical mean.
+This is also a prerequisite for creating a new Asset, which is particular instance (with unique Serial Number, Asset Assignment etc.) which must use valid Asset Catalog.
+
+Asset Catalog requires:
+
+* Name - asset catalog name
+* Asset Type - defines functions, and other options within Aexum.
+
+Other fields of Asset Catalog:
+
+* Manufacturer vendor - example: Lenovo
+* Supplier Vendor - example: Nodefusion
+* Warranty Vendor - example: Lenovo
+* SKU or Product Number: example: 20U30035US
+* EAN - example: 1234567890123
+* Tarriff number - useful if you plan to transport assets across borders
+* Country of origin - useful if you plan to transport assets across borders
+* Description - example: Lenovo ThinkPad T14s
+
+* Asset Group - default asset group???
+
+## Example usage
+
+Asset catalog for Lenovo ThinkPad T14s notebook.
 
 ## Asset Catalogs Grid
 
