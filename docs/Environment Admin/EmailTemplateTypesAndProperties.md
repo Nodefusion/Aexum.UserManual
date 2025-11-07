@@ -6,7 +6,7 @@ This document provides detailed information about the different email template t
 
 Each email template type corresponds to a specific event or notification trigger within the Aexum system. The available variables depend on the template type.
 
-### Example Template
+### Asset Assignment Template
 
 **Type**: AssetAssignment
 
@@ -14,17 +14,17 @@ Each email template type corresponds to a specific event or notification trigger
 
 **Available Variables**:
 
-* `{{DisplayName}}` - The name of the user or team receiving the assignment
-* `{{Host}}` - The Aexum web application endpoint (if configured)
+- `{{DisplayName}}` - The name of the user or team receiving the assignment
+- `{{Host}}` - The Aexum web application endpoint (if configured)
 
 **Available Item Properties** (within `<foreach>` blocks):
 
-* `{{item.AssetName}}` - Name of the assigned asset
-* `{{item.SerialNumber}}` - Serial number of the assigned asset
-* `{{item.AssetId}}` - Unique identifier of the asset
-* `{{item.EnvironmentId}}` - Environment identifier
-* `{{item.PeriodStart}}` - Assignment start date/time
-* `{{item.PeriodEnd}}` - Assignment end date/time
+- `{{item.AssetName}}` - Name of the assigned asset
+- `{{item.SerialNumber}}` - Serial number of the assigned asset
+- `{{item.AssetId}}` - Unique identifier of the asset
+- `{{item.EnvironmentId}}` - Environment identifier
+- `{{item.PeriodStart}}` - Assignment start date/time
+- `{{item.PeriodEnd}}` - Assignment end date/time
 
 **Example Template**:
 
@@ -32,17 +32,60 @@ Each email template type corresponds to a specific event or notification trigger
 <p>Dear {{DisplayName}},</p>
 <p>The following equipment has been assigned to you:</p>
 <ul>
-<foreach>
+  <foreach>
     <li>
-        <strong>{{item.AssetName}}</strong> - 
-        <a href="{{Host}}/environments/{{item.EnvironmentId}}/assets/{{item.AssetId}}/edit">
-            {{item.SerialNumber}}
-        </a>
-        <br/>Assignment Period: {{item.PeriodStart}} to {{item.PeriodEnd}}
+      <strong>{{item.AssetName}}</strong> -
+      <a
+        href="{{Host}}/environments/{{item.EnvironmentId}}/assets/{{item.AssetId}}/edit"
+      >
+        {{item.SerialNumber}}
+      </a>
+      <br />Assignment Period: {{item.PeriodStart}} to {{item.PeriodEnd}}
     </li>
-</foreach>
+  </foreach>
 </ul>
 <p>Please confirm receipt of this equipment.</p>
+```
+
+### Asset Return Template
+
+**Type**: AssetReturn
+
+**Purpose**: Sent when assets are returned by a user or team
+
+**Available Variables**:
+
+- `{{DisplayName}}` - The name of the user or team returning the assets
+- `{{Host}}` - The Aexum web application endpoint (if configured)
+
+**Available Item Properties** (within `<foreach>` blocks):
+
+- `{{item.AssetName}}` - Name of the returned asset
+- `{{item.SerialNumber}}` - Serial number of the returned asset
+- `{{item.AssetId}}` - Unique identifier of the asset
+- `{{item.EnvironmentId}}` - Environment identifier
+- `{{item.PeriodStart}}` - Assignment start date/time
+- `{{item.PeriodEnd}}` - Assignment end date/time
+
+**Example Template**:
+
+```html
+<p>I confirm that I have returned the equipment:</p>
+<p>
+  The equipment has been returned to the Corporate IT department and will be
+  unassigned after verification of its condition.
+</p>
+<p>Returned equipment list:</p>
+<ul>
+  <foreach>
+    <li>
+      <strong>{{item.AssetName}}</strong> -
+      <a href="{{Host}}/environments/{{item.EnvironmentId}}/assets/{{item.AssetId}}/edit">
+        {{item.SerialNumber}}
+      </a>
+    </li>
+  </foreach>
+</ul>
 ```
 
 ## Using Template Variables
@@ -61,9 +104,9 @@ The `<foreach>` block iterates over a collection of items. Each property within 
 
 ```html
 <ul>
-<foreach>
+  <foreach>
     <li>{{item.AssetName}} - {{item.SerialNumber}}</li>
-</foreach>
+  </foreach>
 </ul>
 ```
 
@@ -73,13 +116,13 @@ Combine the `{{Host}}` variable with item properties to create clickable links:
 
 ```html
 <a href="{{Host}}/environments/{{item.EnvironmentId}}/assets/{{item.AssetId}}/edit">
-    View Asset
+  View Asset
 </a>
 ```
 
 ## Notes
 
-* All variables are case-sensitive
-* Missing or undefined variables will be replaced with empty strings
-* HTML tags within the Body property should be properly closed
-* The `<foreach>` tag is a special construct for iteration and is not a standard HTML tag
+- All variables are case-sensitive
+- Missing or undefined variables will be replaced with empty strings
+- HTML tags within the Body property should be properly closed
+- The `<foreach>` tag is a special construct for iteration and is not a standard HTML tag
