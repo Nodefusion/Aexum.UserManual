@@ -1,5 +1,7 @@
 # Changelog
 
-## WebAssembly Version: 1.1.1.7838 and WebApi Version: 1.3.0.7837
+## WebAssembly Version: 1.1.1.7946 and WebApi Version: 1.3.0.7945
 
-Aexum Test updated with latest models
+* Aexum Test environment updated with latest models
+* Documentation updated
+* Bug fixes and performance improvements

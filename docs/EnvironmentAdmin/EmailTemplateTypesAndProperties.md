@@ -14,17 +14,17 @@ Each email template type corresponds to a specific event or notification trigger
 
 **Available Variables**:
 
-- `{{DisplayName}}` - The name of the user or team receiving the assignment
-- `{{Host}}` - The Aexum web application endpoint (if configured)
+* `{{DisplayName}}` - The name of the user or team receiving the assignment
+* `{{Host}}` - The Aexum web application endpoint (if configured)
 
 **Available Item Properties** (within `<foreach>` blocks):
 
-- `{{item.AssetName}}` - Name of the assigned asset
-- `{{item.SerialNumber}}` - Serial number of the assigned asset
-- `{{item.AssetId}}` - Unique identifier of the asset
-- `{{item.EnvironmentId}}` - Environment identifier
-- `{{item.PeriodStart}}` - Assignment start date/time
-- `{{item.PeriodEnd}}` - Assignment end date/time
+* `{{item.AssetName}}` - Name of the assigned asset
+* `{{item.SerialNumber}}` - Serial number of the assigned asset
+* `{{item.AssetId}}` - Unique identifier of the asset
+* `{{item.EnvironmentId}}` - Environment identifier
+* `{{item.PeriodStart}}` - Assignment start date/time
+* `{{item.PeriodEnd}}` - Assignment end date/time
 
 **Example Template**:
 
@@ -55,17 +55,17 @@ Each email template type corresponds to a specific event or notification trigger
 
 **Available Variables**:
 
-- `{{DisplayName}}` - The name of the user or team returning the assets
-- `{{Host}}` - The Aexum web application endpoint (if configured)
+* `{{DisplayName}}` - The name of the user or team returning the assets
+* `{{Host}}` - The Aexum web application endpoint (if configured)
 
 **Available Item Properties** (within `<foreach>` blocks):
 
-- `{{item.AssetName}}` - Name of the returned asset
-- `{{item.SerialNumber}}` - Serial number of the returned asset
-- `{{item.AssetId}}` - Unique identifier of the asset
-- `{{item.EnvironmentId}}` - Environment identifier
-- `{{item.PeriodStart}}` - Assignment start date/time
-- `{{item.PeriodEnd}}` - Assignment end date/time
+* `{{item.AssetName}}` - Name of the returned asset
+* `{{item.SerialNumber}}` - Serial number of the returned asset
+* `{{item.AssetId}}` - Unique identifier of the asset
+* `{{item.EnvironmentId}}` - Environment identifier
+* `{{item.PeriodStart}}` - Assignment start date/time
+* `{{item.PeriodEnd}}` - Assignment end date/time
 
 **Example Template**:
 
@@ -122,7 +122,7 @@ Combine the `{{Host}}` variable with item properties to create clickable links:
 
 ## Notes
 
-- All variables are case-sensitive
-- Missing or undefined variables will be replaced with empty strings
-- HTML tags within the Body property should be properly closed
-- The `<foreach>` tag is a special construct for iteration and is not a standard HTML tag
+* All variables are case-sensitive
+* Missing or undefined variables will be replaced with empty strings
+* HTML tags within the Body property should be properly closed
+* The `<foreach>` tag is a special construct for iteration and is not a standard HTML tag
