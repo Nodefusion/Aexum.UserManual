@@ -129,3 +129,8 @@ To remove system permissions from a permission role:
 * Reduced security risks through appropriate access restrictions
 * Streamlined permission changes affecting multiple users
 * Consistent permission application across the organization
+
+## Related Documentation
+
+* [Permission Groups](../EnvironmentAdmin/PermissionGroups.md) - Managing permission groups and role assignments
+* [Environment Users](../EnvironmentAdmin/EnvironmentUsers.md) - Managing individual user accounts and role assignments
