@@ -9,5 +9,5 @@ Once users are in Aexum Organization, they are also part of Aexum Environment(s)
 
 ## Related Documentation
 
-* [Environment Users](../Environment/Users.md) - Managing individual user accounts and profiles
+* [Environment Users](../EnvironmentAdmin/EnvironmentUsers.md) - Managing individual user accounts and profiles
 * [Organization Permissions](./OrganizationPermissions.md) - Managing permissions available within the Organization
