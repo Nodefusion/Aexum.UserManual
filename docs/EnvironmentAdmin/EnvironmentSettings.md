@@ -29,4 +29,4 @@ When Aexum system needs to send email notifications (example Asset is assigned t
 
 ## Related Documentation
 
-* [Environments](../OrganizationAdmin/Environment.md) - Managing Environments within an Organization
+* [Environments](../OrganizationAdmin/Environments.md) - Managing Environments within an Organization

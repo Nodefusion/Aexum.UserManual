@@ -6,7 +6,7 @@ Additionally, You have tabs, to show Assets, Teams, and Permission Groups for sp
 
 ## Related Documentation
 
-* [Teams](../EnvironmentAdmin/Team.md) - Managing teams within the Environment and adding users to teams
+* [Teams](./Teams.md) - Managing teams within the Environment and adding users to teams
 * [Assets](../Environment/Assets.md) - Managing individual asset assignment
-* [Permission Groups](../EnvironmentAdmin/PermissionGroups.md) - Managing permission groups and user assignments
+* [Permission Groups](./PermissionGroups.md) - Managing permission groups and user assignments
 * [Organization Users](../OrganizationAdmin/OrganizationUsers.md) - Managing individual user accounts and profiles

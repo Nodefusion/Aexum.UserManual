@@ -71,7 +71,7 @@ To remove a vendor:
 
 ## Vendor Groups
 
-One Vendor can be added to multiple Vendor Groups. Vendor Groups help in organizing vendors into logical categories for easier management and bulk operations. Please refer to the [Vendor Groups](../Environment%20Admin/VendorGroups.md) documentation for more details on managing vendor groups.
+One Vendor can be added to multiple Vendor Groups. Vendor Groups help in organizing vendors into logical categories for easier management and bulk operations. Please refer to the [Vendor Groups](../EnvironmentAdmin/VendorGroups.md) documentation for more details on managing vendor groups.
 
 ## Use Case Example
 

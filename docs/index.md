@@ -57,7 +57,7 @@ The navigation menu structure adapts based on the current context (root, organiz
 * **Home** - Organization details including creation date, region, and country
 * **[Organization Roles](./OrganizationAdmin/OrganizationRoles.md)** - Organization-level permission management for user access control
 * **[Environments](./OrganizationAdmin/Environments.md)** - Environment listing and creation interface for the organization
-* **[Users](../OrganizationAdmin/Users.md)** - Directory of users within the organization with search and profile access
+* **[Users](./OrganizationAdmin/OrganizationUsers.md)** - Directory of users within the organization with search and profile access
 * **Edit Organization** - Edit organization details such as name, region, and country
 * **[Activity Log](./Reference/ActivityLogs.md)** - View and manage organization activity logs
 
@@ -110,7 +110,7 @@ Vendors represent external organizations that provide products or services. The 
 
 The platform implements role-based access control (RBAC) through a combination of Permission Roles, Permission Groups, and direct user assignments. This layered approach enables flexible and granular access management. Roles are available on organization and environment levels.
 
-List of all permissions can be found in the [Permission Reference](./Reference/PermissionReference.md) documentation.
+List of all permissions can be found in the [Permission Reference](./Reference/Permissions.md) documentation.
 
 ## Additional information
 

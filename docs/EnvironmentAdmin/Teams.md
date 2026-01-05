@@ -125,5 +125,5 @@ Assign users to appropriate teams based on their roles and responsibilities. For
 
 ## Related Documentation
 
-* [Environment Users](../Environment/Users.md) - Managing individual user accounts and profiles
+* [Environment Users](../EnvironmentAdmin/EnvironmentUsers.md) - Managing individual user accounts and profiles
 * [Assets](../Environment/Assets.md) - Managing individual asset assignment
