@@ -11,7 +11,7 @@ The following fields are available when configuring a Team:
 | Field | Required | Description | Example |
 | -- | -- | -- | -- |
 | **Microsoft Tenant ID** | No | Microsoft cloud tenant guid | f0c19f51-0827-45fd-a1de-83b54d414614 |
-| **From Email Address** | Yes | Email address used for sending notifications | <DoNotReply@email.aexum.com> |
+| **From Email Address** | Yes | Email address used for sending notifications | <DoNotReply AT email.aexum.com> |
 | **Email Provider** | Yes | Email service provider used for sending notifications | Aexum Provided |
 
 ## Email Provider
