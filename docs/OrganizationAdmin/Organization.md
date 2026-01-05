@@ -22,6 +22,6 @@ User can also delete organization in organization home page with exact action as
 ## Related Documentation
 
 * [Environment](../EnvironmentAdmin/Environment.md) - Managing Environments within an Organization
-* [Organization Users](../OrganizationAdmin/Users.md) - Managing Users at the Organization level
+* [Organization Users](OrganizationUsers.md) - Managing Users at the Organization level
 * [Organization Settings](../OrganizationAdmin/Settings.md) - Configuring Organization-wide settings
 * [Activity Logs](../Reference/ActivityLogs.md) - Monitoring Organization activity and changes
