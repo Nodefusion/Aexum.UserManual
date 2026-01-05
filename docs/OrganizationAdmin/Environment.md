@@ -20,6 +20,6 @@ User can also delete environment in environment home page with exact action as i
 
 ## Related Documentation
 
-* [Environment Users](../Environment/Users.md) - Managing Users at the Environment level
-* [Environment Settings](../EnvironmentAdmin/Settings.md) - Configuring Environment-wide settings
+* [Environment Users](../EnvironmentAdmin/EnvironmentUsers.md) - Managing Users at the Environment level
+* [Environment Settings](../EnvironmentAdmin/EnvironmentSettings.md) - Configuring Environment-wide settings
 * [Organization](../OrganizationAdmin/Organization.md) - Managing Organizations within Aexum
