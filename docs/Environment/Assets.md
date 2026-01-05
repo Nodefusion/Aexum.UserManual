@@ -218,7 +218,7 @@ New Print Preview window will be opened where you can print the labels directly 
 ## Related Documentation
 
 * [Asset Catalogs](../Environment/AssetCatalogs.md) - Managing asset templates and
-* [Asset Types](../Environment/AssetTypes.md) - Managing asset classifications
+* [Asset Types](../Reference/AssetType.md) - Managing asset classifications
 * [Business Units](../EnvironmentAdmin/BusinessUnits.md) - Managing organizational units and asset ownership
 * [Locations](../EnvironmentAdmin/Locations.md) - Managing physical and logical asset locations
 * [Email Templates](../EnvironmentAdmin/EmailTemplate.md) - Configuring email notifications for asset assignments
