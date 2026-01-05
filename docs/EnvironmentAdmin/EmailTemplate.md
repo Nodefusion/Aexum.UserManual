@@ -170,4 +170,3 @@ Body:
 ## Related Documentation
 
 * [Email Template Types and Properties](EmailTemplateTypesAndProperties.md) - Detailed information about template types and available variables
-* [Manage Email Templates](ManageEmailTemplates.md) - Guide to the email template management interface
