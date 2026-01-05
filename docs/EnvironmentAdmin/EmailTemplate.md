@@ -118,45 +118,6 @@ To remove an email template:
 
 **Warning:** Ensure a default template exists for the Type and Language combination before deleting templates. Removing all custom templates will cause the system to revert to built-in defaults.
 
-## Use Case Example
-
-**Scenario:** A multinational organization with users in multiple countries requires localized email notifications for asset management events.
-
-**Solution:** Create language-specific email templates for each supported culture:
-
-**English (en-US) - Asset Assignment Template:**
-
-```text
-Subject: Asset Assignment Notification - {{AssetName}}
-Body:
-<p>Hello {{UserName}},</p>
-<p>Asset <strong>{{AssetName}}</strong> (Serial: {{SerialNumber}}) has been assigned to you.</p>
-<p>Location: {{LocationName}}</p>
-<p>Please acknowledge receipt within 24 hours.</p>
-```
-
-**Croatian (hr-HR) - Asset Assignment Template:**
-
-```text
-Subject: Obavijest o dodjeli imovine - {{AssetName}}
-Body:
-<p>Pozdrav {{UserName}},</p>
-<p>Imovina <strong>{{AssetName}}</strong> (Serijski broj: {{SerialNumber}}) dodijeljena vam je.</p>
-<p>Lokacija: {{LocationName}}</p>
-<p>Molimo potvrdite primitak u roku od 24 sata.</p>
-```
-
-**German (de-DE) - Asset Assignment Template:**
-
-```text
-Subject: Asset-Zuweisungsbenachrichtigung - {{AssetName}}
-Body:
-<p>Hallo {{UserName}},</p>
-<p>Das Asset <strong>{{AssetName}}</strong> (Seriennummer: {{SerialNumber}}) wurde Ihnen zugewiesen.</p>
-<p>Standort: {{LocationName}}</p>
-<p>Bitte bestätigen Sie den Empfang innerhalb von 24 Stunden.</p>
-```
-
 **Benefits:**
 
 * Localized communications respecting user culture preferences
