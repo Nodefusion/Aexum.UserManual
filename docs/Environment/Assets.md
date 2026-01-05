@@ -221,5 +221,5 @@ New Print Preview window will be opened where you can print the labels directly 
 * [Asset Types](../Environment/AssetTypes.md) - Managing asset classifications
 * [Business Units](../EnvironmentAdmin/BusinessUnits.md) - Managing organizational units and asset ownership
 * [Locations](../EnvironmentAdmin/Locations.md) - Managing physical and logical asset locations
-* [Email Templates](../EnvironmentAdmin/EmailTemplates.md) - Configuring email notifications for asset assignments
+* [Email Templates](../EnvironmentAdmin/EmailTemplate.md) - Configuring email notifications for asset assignments
 * [Vendors](../Environment/Vendors.md) - Managing vendor accounts and profiles
