@@ -11,8 +11,8 @@ The following fields are available when configuring an Email Template:
 | Field | Required | Description | Example |
 | -- | -- | -- | -- |
 | **Type** | Yes | Defines the event or purpose triggering this template | Asset Assignment, Asset Return |
-| **Subject** | Yes | Email subject line with support for variable substitution | Asset Assigned: `\{\{AssetName\}\}` |
-| **Body** | Yes | HTML-formatted email content with support for variable substitution | `<p>Hello \{\{UserName\}\},</p><p>Asset \{\{AssetName\}\} has been assigned to you.</p>` |
+| **Subject** | Yes | Email subject line with support for variable substitution | Asset Assigned: `{{AssetName}}` |
+| **Body** | Yes | HTML-formatted email content with support for variable substitution | `<p>Hello {{UserName}},</p><p>Asset {{AssetName}} has been assigned to you.</p>` |
 | **Language** | Yes | Culture code specifying the template language | en-US, hr-HR, de-DE |
 | **IsDefault** | No | Designates this template as the default for its Type and Language combination | true/false |
 
@@ -39,16 +39,16 @@ The `IsDefault` property determines template selection behavior:
 
 Variable Substitution is supported on both the Subject and Body fields of email templates.
 
-Variables are enclosed in double curly braces: `\{\{VariableName\}\}`. During email transmission, these placeholders are dynamically replaced with actual values from the system.
+Variables are enclosed in double curly braces: `{{VariableName}}`. During email transmission, these placeholders are dynamically replaced with actual values from the system.
 
 **Example:**
 
 ```text
-Subject: Asset Assignment - \{\{AssetName\}\}
+Subject: Asset Assignment - {{AssetName}}
 ```
 
 ```text
-Body: Hello \{\{UserName\}\}, asset \{\{AssetName\}\} (Serial: \{\{SerialNumber\}\}) has been assigned to you.
+Body: Hello {{UserName}}, asset {{AssetName}} (Serial: {{SerialNumber}}) has been assigned to you.
 ```
 
 ### Body HTML Formatting
@@ -127,33 +127,33 @@ To remove an email template:
 **English (en-US) - Asset Assignment Template:**
 
 ```text
-Subject: Asset Assignment Notification - \{\{AssetName\}\}
+Subject: Asset Assignment Notification - {{AssetName}}
 Body:
-<p>Hello \{\{UserName\}\},</p>
-<p>Asset <strong>\{\{AssetName\}\}</strong> (Serial: \{\{SerialNumber\}\}) has been assigned to you.</p>
-<p>Location: \{\{LocationName\}\}</p>
+<p>Hello {{UserName}},</p>
+<p>Asset <strong>{{AssetName}}</strong> (Serial: {{SerialNumber}}) has been assigned to you.</p>
+<p>Location: {{LocationName}}</p>
 <p>Please acknowledge receipt within 24 hours.</p>
 ```
 
 **Croatian (hr-HR) - Asset Assignment Template:**
 
 ```text
-Subject: Obavijest o dodjeli imovine - \{\{AssetName\}\}
+Subject: Obavijest o dodjeli imovine - {{AssetName}}
 Body:
-<p>Pozdrav \{\{UserName\}\},</p>
-<p>Imovina <strong>\{\{AssetName\}\}</strong> (Serijski broj: \{\{SerialNumber\}\}) dodijeljena vam je.</p>
-<p>Lokacija: \{\{LocationName\}\}</p>
+<p>Pozdrav {{UserName}},</p>
+<p>Imovina <strong>{{AssetName}}</strong> (Serijski broj: {{SerialNumber}}) dodijeljena vam je.</p>
+<p>Lokacija: {{LocationName}}</p>
 <p>Molimo potvrdite primitak u roku od 24 sata.</p>
 ```
 
 **German (de-DE) - Asset Assignment Template:**
 
 ```text
-Subject: Asset-Zuweisungsbenachrichtigung - \{\{AssetName\}\}
+Subject: Asset-Zuweisungsbenachrichtigung - {{AssetName}}
 Body:
-<p>Hallo \{\{UserName\}\},</p>
-<p>Das Asset <strong>\{\{AssetName\}\}</strong> (Seriennummer: \{\{SerialNumber\}\}) wurde Ihnen zugewiesen.</p>
-<p>Standort: \{\{LocationName\}\}</p>
+<p>Hallo {{UserName}},</p>
+<p>Das Asset <strong>{{AssetName}}</strong> (Seriennummer: {{SerialNumber}}) wurde Ihnen zugewiesen.</p>
+<p>Standort: {{LocationName}}</p>
 <p>Bitte bestätigen Sie den Empfang innerhalb von 24 Stunden.</p>
 ```
 
