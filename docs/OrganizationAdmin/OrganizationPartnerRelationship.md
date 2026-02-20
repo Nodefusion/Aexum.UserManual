@@ -1,12 +1,17 @@
 # Organization Partner Relationships
 
-Partner Relationships enable organizations to establish delegated access and collaboration with other organizations. Partner relationships define the foundation for customer permission groups, allowing controlled access to resources and environments across organizational boundaries.
+Partner Relationships enable you to give other organizations delegated access to your organization. Partner relationships define the foundation for customer permission groups, allowing controlled access to resources and environments across organizational boundaries.
 
 ## Overview
 
-The Partner Relationships page provides a unified interface for managing partnerships with other organizations. Users with the `CustomersAdministration` permission can view existing relationships and create new partnerships. The page supports both relationship discovery and creation through a dual-tab interface.
+The Partner Relationships page provides a unified interface for giving other organizations partner access to your organization. The defining feature of a partner relationship is that it grants a partner organization access to manage your organization.
 
-Partner relationships represent formal connections between your organization and partner organizations, establishing the basis for permission group assignments and delegated access management.
+**Key Characteristics:**
+* **Access Grant** - Partner relationships grant a partner organization permission to manage your organization
+* **Partner Management** - Partners manage this access relationship from their Customer Organization page (where your organization appears as a customer)
+* **One-Way Visibility** - You don't see yourself in Customer Organization, and the partner doesn't see your organization in their Partner Relationships
+
+Users with the `CustomersAdministration` permission can view existing partner relationships you've created and create new partnerships. The page supports both viewing and creation through a dual-tab interface.
 
 ## Managing Partner Relationships
 
@@ -22,17 +27,17 @@ The Partner Relationships Overview tab displays all established partnerships:
 
 ### Creating Partner Relationships
 
-There are two methods to create a new partner relationship:
+Creating a partner relationship grants that partner organization access to manage your organization. There are two methods to establish this relationship:
 
 #### Method 1: Create Tab
 
 1. Navigate to the **Partner Relationships** page
 2. Click the **Create** tab to open the relationship creation form
 3. Complete the partner relationship form with:
-   * **Partner Organization ID** - Enter the GUID of the partner organization
+   * **Partner Organization ID** - Enter the GUID of the partner organization you want to grant access to
    * **Create Permission Groups** - Enable checkbox to automatically create permission groups for all environments
    * **Native Permission Role** - Select the permission level (Global Administrator or Global Reader) if creating permission groups
-4. Submit the form to establish the relationship
+4. Submit the form to grant the partner organization access to manage your organization
 
 #### Method 2: Quick Add with Query Parameters
 

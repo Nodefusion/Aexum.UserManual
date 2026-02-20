@@ -1,10 +1,10 @@
 # Organization Customers
 
-Every Organization can manage relationships with other partner organizations as customers. Customers represent partner organizations that have been granted delegated access or permissions within your organization through established relationships.
+Every Organization can manage relationships with other partner organizations as customers. Customers represent partner organizations that have granted you delegated access or permissions. Only customer relationships that the partner has explicitly approved will appear on the Customers page.
 
 ## Overview
 
-The Customers page displays a grid of all customer (partner organization) relationships associated with your organization. Users with the `CustomersAdministration` permission can access this page to view and manage customer relationships.
+The Customers page displays a grid of all customer (partner organization) relationships associated with your organization—these are only the partners who have given permission. Users with the `CustomersAdministration` permission can access this page to view and manage customer relationships. Partners that have not yet granted permission will not appear in this list.
 
 ## Customer Management
 
