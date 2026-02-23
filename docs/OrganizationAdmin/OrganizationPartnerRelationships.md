@@ -80,7 +80,7 @@ Partner relationships automatically generate or update associated permission gro
 ## Related Documentation
 
 * [Organization Customers](./OrganizationCustomers.md) - Managing customer relationships and partnerships
-* [Organization Customers Administration](./OrganizationCustomersAdmin.md) - Managing permissions for customer relationships
+* * [Organization Customers Administration](./OrganizationCustomersAdmin.md) - Managing permissions for customer relationships
 * [Organization](./Organization.md) - Managing organizations and their configurations
 * [Organization Roles](./OrganizationRoles.md) - Managing roles at the organization level
 * [Reference - Permissions](../Reference/Permissions.md) - Comprehensive list of permissions available
