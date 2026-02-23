@@ -1,18 +1,18 @@
 # Organization Customer Administration
 
-Customer Administration provides centralized management and member assignment for existing permission groups. This section handles viewing, searching, and member management for permission groups created through Partner Relationships where the partner has granted permission.
+Customer Administration provides centralized management and member assignment for existing customer permission groups. This section handles viewing, searching, and member management for permission groups created through Organization Partner Relationships where the customer has granted you access to their organization.
 
 ## Overview
 
-The Customer Administration page displays all permission groups from customer partners in a comprehensive grid interface. Only permission groups from partners who have explicitly granted you access will appear on this page. Users with the `CustomersAdministration` permission can view permission groups, search and filter them, manage member assignments, and export data. The page focuses on operational member management rather than permission group configuration.
+The Customer Administration page displays all permission groups from customer organizations in a comprehensive grid interface. Only permission groups from customers who have granted you access will appear on this page. Users with the `CustomersAdministration` permission can view permission groups, search and filter them, manage member assignments, and export data. The page focuses on operational member management rather than permission group configuration.
 
-**Note:** Customer Permission Groups are created automatically when establishing Partner Relationships with partners who have granted permission. This administration section manages member assignments and provides visibility into existing groups from approved customer relationships.
+**Note:** Customer Permission Groups are created automatically when a customer establishes new Partner Relationships. This administration section manages member assignments and provides visibility into existing groups from approved customer relationships.
 
 ## Managing Customer Administration
 
 ### Viewing Customer Administration
 
-The Customer Administration page displays all permission groups from approved customer partners in a grid format. These are only the permission groups created by partners who have granted you access:
+The Customer Administration page displays all permission groups from customers in a grid format. These are only the permission groups created by customers who have granted you access:
 
 1. Navigate to the **Customers Admin** page
 2. View the complete list of customer permission groups with columns showing:
@@ -27,7 +27,7 @@ The Customer Administration page displays all permission groups from approved cu
 Users can search for specific permission groups using multiple criteria:
 
 * **Group Name** - Search by permission group name
-* **Customer Organization** - Filter by partner organization name
+* **Customer Organization** - Filter by organization name
 * **Customer Environment** - Filter by customer environment
 * **Case-Insensitive Matching** - Search is not case-sensitive
 * **Partial Text Support** - Search matches partial text
@@ -69,7 +69,7 @@ The Overview tab displays read-only permission group configuration:
 * **Partner Organization** - Associated partner organization (read-only)
 * **Customer Environment** - Target environment (read-only)
 
-**Note:** To modify these settings, update or create new permission groups through Partner Relationships.
+**Note:** To modify these settings, ask the customer to make changes through their Partner Relationships.
 
 #### Assigned Members Tab
 
@@ -111,16 +111,16 @@ The Add Members tab manages user assignment to the permission group:
 
 ## Customer Permission Group Creation and Management
 
-Customer permission groups are created automatically through Partner Relationships when the partner grants permission:
+Customer permission groups are created automatically through Partner Relationships when the customer grants permission:
 
-1. **Permission Grant** - The partner must first grant you access and permission
-2. **Creation** - When a Partner Relationship is established with a partner who has granted permission, and "Create Permission Groups" is enabled
+1. **Permission Grant** - The customer must first grant you access and permission
+2. **Creation** - When a Partner Relationship is established with a customer who has granted permission, and "Create Permission Groups" is enabled
 3. **Automatic Scoping** - Groups are created for all current organization environments
 4. **Native Role Assignment** - Groups inherit the selected native permission role
 5. **Member Assignment** - Members added through this administration section
 6. **Modification** - Member assignments can be changed; group settings remain read-only
 
-To create or modify permission group configuration, navigate to **Partner Relationships**.
+To create or modify permission group configuration, customers navigate to **Partner Relationships**.
 
 ## Related Documentation
 

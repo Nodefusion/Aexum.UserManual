@@ -1,18 +1,19 @@
 # Organization Customers
 
-Every Organization can manage relationships with other partner organizations as customers. Customers represent partner organizations that have granted you delegated access or permissions. Only customer relationships that the partner has explicitly approved will appear on the Customers page.
+Organization customers represents customer relationships, customers who have given permission to access their organization.
+Customer relationships enable you to see the customer organization in organization views and allow you to manage their organization based on the permissions you have been granted. This provides visibility and access to manage customer resources according to your assigned permission levels.
 
 ## Overview
 
-The Customers page displays a grid of all customer (partner organization) relationships associated with your organization—these are only the partners who have given permission. Users with the `CustomersAdministration` permission can access this page to view and manage customer relationships. Partners that have not yet granted permission will not appear in this list.
+The Customers page displays a grid of all customer relationships associated with your organization; these are only customers who have given permission to their organization. Users with the `CustomersAdministration` permission can access this page to view customer relationships and delete customer relationships, which removes permission to that customer organization.
 
 ## Customer Management
 
 ### Viewing Customers
 
-The Customers page displays all customer relationships in a sortable and filterable grid format:
+The Customers page displays all customers in a sortable and filterable grid format:
 
-* **Search** - Locate customers by partner organization name using case-insensitive search
+* **Search** - Locate customers by organization name using case-insensitive search
 * **Sorting** - Order customer records by organization name or other columns
 * **Selection** - Select one or more customers using checkboxes for bulk operations
 * **Refresh** - Reload the customer list to view latest data
@@ -26,7 +27,7 @@ Users can export customer data to CSV format:
 3. Click the **Export** action in the grid ribbon
 4. The CSV file exports all selected customers or the complete customer list
 
-**Note:** Exported data includes Partner Organization names and is suitable for external reporting or analysis.
+**Note:** Exported data includes Customer Organization names and is suitable for external reporting or analysis.
 
 ### Delete Customer Relationships
 

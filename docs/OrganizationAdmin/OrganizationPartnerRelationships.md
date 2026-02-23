@@ -8,10 +8,10 @@ The Partner Relationships page provides a unified interface for giving other org
 
 **Key Characteristics:**
 * **Access Grant** - Partner relationships grant a partner organization permission to manage your organization
-* **Partner Management** - Partners manage this access relationship from their Customer Organization page (where your organization appears as a customer)
+* **Partner Management** - Partners manage this access relationship from their Organization Customers page (where your organization appears as a customer)
 * **One-Way Visibility** - You don't see yourself in Customer Organization, and the partner doesn't see your organization in their Partner Relationships
 
-Users with the `CustomersAdministration` permission can view existing partner relationships you've created and create new partnerships. The page supports both viewing and creation through a dual-tab interface.
+Users with the `CustomersAdministration` permission can view existing partner relationships and create new partnerships. The page supports both viewing and creation through a dual-tab interface.
 
 ## Managing Partner Relationships
 
@@ -45,7 +45,7 @@ Organizations can create partner relationships using query parameters:
 
 1. Navigate to: `/organizations/{organizationId}/partnerrelationships?partnerId={partnerOrgId}&permissionRole={roleName}`
 2. The Create tab automatically activates
-3. Selected partner and permission role are pre-populated
+3. The partner and permission role are pre-populated
 4. Complete remaining fields and submit
 
 **Note:** Pre-filled parameters reduce form entry time for common partnership scenarios.
@@ -71,16 +71,15 @@ To export partner relationship data:
 
 ## Permission Group Integration
 
-Partner relationships automatically generate or update associated permission groups:
+Partner relationships automatically generate associated permission groups:
 
 * **Automatic Creation** - Permission groups created when relationship established
-* **Cascading Updates** - Changes to relationships propagate to permission groups
 * **Member Synchronization** - Permission group members inherit relationship permissions
 
 ## Related Documentation
 
 * [Organization Customers](./OrganizationCustomers.md) - Managing customer relationships and partnerships
-* * [Organization Customers Administration](./OrganizationCustomersAdmin.md) - Managing permissions for customer relationships
+* [Organization Customers Administration](./OrganizationCustomersAdmin.md) - Managing permissions for customer relationships
 * [Organization](./Organization.md) - Managing organizations and their configurations
 * [Organization Roles](./OrganizationRoles.md) - Managing roles at the organization level
 * [Reference - Permissions](../Reference/Permissions.md) - Comprehensive list of permissions available
