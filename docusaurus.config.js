@@ -172,9 +172,9 @@ const config = {
         ],
       },
       algolia: {
-        appId: 'T17L45VSEH',
-        apiKey: '8c2a6c856776945b60f394e86e124a66',
-        indexName: 'app-manual-aexum',
+        appId: '7O3QDPO488',
+        apiKey: '3f06a8c40aa6d7522bcce0fdff18b5d6',
+        indexName: 'Aexum User Manual',
         insights: true,
       },
       colorMode: {
