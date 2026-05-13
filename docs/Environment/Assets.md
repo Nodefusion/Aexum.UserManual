@@ -64,6 +64,66 @@ To create a new asset:
 
 **Note:** The Asset Catalog selection determines available fields and system functionality. Choose the appropriate catalog template carefully.
 
+### Bulk Creating Assets
+
+The Bulk Create feature allows you to create multiple assets simultaneously with shared properties and automatic sequential naming.
+
+#### When to Use Bulk Create
+
+* Procuring a batch of identical devices (e.g., 20 laptops from the same catalog)
+* Setting up a new office location with multiple identical assets
+* Importing newly purchased equipment that shares the same specifications
+
+#### How to Bulk Create Assets
+
+1. Navigate to the Assets page
+2. Click the **Bulk Create** button in the toolbar
+3. A side panel opens with a two-step wizard:
+
+**Step 1 — Configure**
+
+| Field | Required | Description | Example |
+| -- | -- | -- | -- |
+| **Base Name** | Yes | Common name prefix for all generated assets | Microsoft 365 Business Premium |
+| **Count** | Yes | Number of assets to create (1–500) | 20 |
+| **Enable auto-numbering suffix** | No | Appends a sequential number to each asset name | ✓ |
+| **Number Prefix** | No | Separator between base name and number | ` #` |
+| **Start Number** | No | First number in the sequence | 1 |
+| **Number of digits** | No | Zero-padded width of the number (1–5) | 3 |
+| **Asset Type** | Yes | Classification for all created assets | Hardware |
+| **Asset Catalog** | Yes | Catalog template applied to all assets | Lenovo ThinkPad T14s |
+| **Location** | Yes | Location assigned to all assets | Building A - Floor 3 |
+| **Business Unit** | Yes | Business unit assigned to all assets | IT Department |
+| **Parent Asset** | No | Optional parent asset for all created assets | — |
+| **Supplier Vendor** | No | Supplier vendor applied to all assets | Nodefusion |
+| **Warranty Vendor** | No | Warranty vendor applied to all assets | Lenovo |
+| **Warranty Start Date** | No | Warranty start date for all assets | 2026-01-15 |
+| **Warranty End Date** | No | Warranty end date for all assets | 2028-01-15 |
+| **Description** | No | Shared description for all assets | Standard IT equipment |
+
+When auto-numbering is enabled and Count > 1, a live preview shows the first and last generated name (e.g., `Laptop #001 … Laptop #020`).
+
+4. Click **Next: Preview** to proceed (form validation runs at this step)
+
+**Step 2 — Preview & Create**
+
+* A summary card shows all common properties selected in Step 1
+* A grid lists all asset names that will be created with their sequential numbers
+* Review the list carefully before confirming
+
+5. Click **Create N Asset(s)** to submit
+6. All assets are created in a single API call; the panel closes automatically on success and the grid refreshes
+
+#### Auto-Numbering Examples
+
+| Base Name | Separator | Start | Digits | Result (3 assets) |
+| -- | -- | -- | -- | -- |
+| Laptop | ` #` | 1 | 3 | `Laptop #001`, `Laptop #002`, `Laptop #003` |
+| Server | `-` | 10 | 2 | `Server-10`, `Server-11`, `Server-12` |
+| Monitor | ` ` | 1 | 1 | `Monitor 1`, `Monitor 2`, `Monitor 3` |
+
+**Note:** If auto-numbering is disabled or Count is 1, all assets receive the exact Base Name. In that case, if Count > 1, multiple assets with identical names will be created.
+
 ### Updating Assets
 
 To modify an existing asset:
@@ -84,6 +144,8 @@ To remove an asset:
 4. Confirm the deletion by entering the asset name as requested
 
 **Warning:** Ensure the asset has no active assignments or critical connections before deletion. Consider updating the asset status to "Retired" instead of deleting to maintain historical records.
+
+Deleted assets are moved to the [Environment Recycle Bin](../EnvironmentAdmin/EnvironmentRecycleBin.md) and can be restored if needed.
 
 ## Asset Connections
 
@@ -197,7 +259,7 @@ To modify or remove asset assignments:
 
 ## Print Asset Labels
 
-You can use Print Asset Labels feature on particular one assets, or for selected assets from the Assets grid view.
+You can use the Print Asset Labels feature for individual assets, or for selected assets from the Assets grid view.
 
 Options:
 
@@ -217,9 +279,10 @@ New Print Preview window will be opened where you can print the labels directly 
 
 ## Related Documentation
 
-* [Asset Catalogs](../Environment/AssetCatalogs.md) - Managing asset templates and
+* [Asset Catalogs](../Environment/AssetCatalogs.md) - Managing asset templates
 * [Asset Types](../Reference/AssetType.md) - Managing asset classifications
 * [Business Units](../EnvironmentAdmin/BusinessUnits.md) - Managing organizational units and asset ownership
 * [Locations](../EnvironmentAdmin/Locations.md) - Managing physical and logical asset locations
 * [Email Templates](../EnvironmentAdmin/EmailTemplate.md) - Configuring email notifications for asset assignments
 * [Vendors](../Environment/Vendors.md) - Managing vendor accounts and profiles
+* [Environment Recycle Bin](../EnvironmentAdmin/EnvironmentRecycleBin.md) - Recovering deleted assets
